@@ -1,0 +1,12 @@
+time_s,state,reason,lane_center_x,lane_error_normalized,lane_confidence,obstacle_count,path_blocked,obstacle_present,primary_track_id,obstacle_color,obstacle_motion,obstacle_confidence,obstacle_threat_score,left_speed,right_speed
+0.032,FOLLOW_LANE,camera lane following,159.000,-0.006250,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.534371,4.665629
+0.064,FOLLOW_LANE,camera lane following,162.000,0.012500,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.746879,4.453121
+0.096,FOLLOW_LANE,camera lane following,160.000,0.000000,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.568754,4.631246
+0.128,FOLLOW_LANE,camera lane following,159.500,-0.003125,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.600004,4.599996
+0.160,FOLLOW_LANE,camera lane following,159.500,-0.003125,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.600004,4.599996
+0.192,FOLLOW_LANE,camera lane following,160.500,0.003125,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.600004,4.599996
+0.224,FOLLOW_LANE,camera lane following,159.500,-0.003125,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.600004,4.599996
+0.256,FOLLOW_LANE,camera lane following,159.500,-0.003125,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.600004,4.599996
+0.288,FOLLOW_LANE,camera lane following,159.500,-0.003125,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.600004,4.599996
+0.320,FOLLOW_LANE,camera lane following,159.500,-0.003125,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.600004,4.599996
+0.352,FOLLOW_LANE,camera lane following,159.500,-0.003125,0.750000,0,0,0,,,NONE,0.000000,0.000000,4.600004,4.599996

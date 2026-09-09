@@ -1,0 +1,89 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "../protos/TrackOne.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.18887574916258923 0.10190651259462084 0.9766990396581093 2.171626288233555
+  position 1.6208964044079466 -2.3103802060933294 0.928308823403588
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.5 1.5
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
+TrackOne {
+  translation 0 -0.0075 0
+  rotation -1 0 0 -1.5708053071795867
+}
+DEF EPUCK E-puck {
+  translation 0.51195 -0.097286 -0.0019762
+  rotation 0.004897379717457336 0.006490759625531075 0.9999669423092878 1.37132
+  controller "e_puck"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+    DistanceSensor {
+      translation 0 0.02 0
+      name "ir1"
+    }
+    DistanceSensor {
+      translation 0 -0.01 0
+      name "ir0"
+      type "infra-red"
+    }
+  ]
+}
+DEF ped Solid {
+  translation -0.06 0.11 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Robot {
+  children [
+    Emitter {
+      name "dist_emitter"
+      channel 1
+    }
+  ]
+  controller "legacy_scene_supervisor"
+  supervisor TRUE
+}
+DEF obs Solid {
+  translation 0.36 -0.22 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+}

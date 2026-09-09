@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "scenarios": [
+    {
+      "id": "lane_straight_nominal",
+      "category": "lane",
+      "route": "straight",
+      "lighting": "nominal",
+      "enable_static": false,
+      "enable_moving": false
+    },
+    {
+      "id": "lane_straight_dim",
+      "category": "lane",
+      "route": "straight",
+      "lighting": "dim",
+      "enable_static": false,
+      "enable_moving": false
+    },
+    {
+      "id": "lane_straight_bright",
+      "category": "lane",
+      "route": "straight",
+      "lighting": "bright",
+      "enable_static": false,
+      "enable_moving": false
+    },
+    {
+      "id": "lane_curve_nominal",
+      "category": "lane",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": false,
+      "enable_moving": false
+    },
+    {
+      "id": "lane_curve_dim",
+      "category": "lane",
+      "route": "full",
+      "lighting": "dim",
+      "enable_static": false,
+      "enable_moving": false
+    },
+    {
+      "id": "lane_curve_bright",
+      "category": "lane",
+      "route": "full",
+      "lighting": "bright",
+      "enable_static": false,
+      "enable_moving": false
+    },
+    {
+      "id": "static_left",
+      "category": "stationary",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": true,
+      "static_position": "left",
+      "enable_moving": false
+    },
+    {
+      "id": "static_center",
+      "category": "stationary",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": true,
+      "static_position": "center",
+      "enable_moving": false
+    },
+    {
+      "id": "static_right",
+      "category": "stationary",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": true,
+      "static_position": "right",
+      "enable_moving": false
+    },
+    {
+      "id": "moving_010",
+      "category": "moving",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": false,
+      "enable_moving": true,
+      "moving_speed": 0.10
+    },
+    {
+      "id": "moving_015",
+      "category": "moving",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": false,
+      "enable_moving": true,
+      "moving_speed": 0.15
+    },
+    {
+      "id": "moving_020",
+      "category": "moving",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": false,
+      "enable_moving": true,
+      "moving_speed": 0.20
+    },
+    {
+      "id": "multi_static_sequential",
+      "category": "multi",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": true,
+      "enable_moving": false,
+      "obstacle_layout": "multi_static"
+    },
+    {
+      "id": "multi_moving_crossings",
+      "category": "multi",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": false,
+      "enable_moving": true,
+      "moving_speed": 0.15,
+      "obstacle_layout": "multi_moving"
+    },
+    {
+      "id": "multi_mixed_obstacles",
+      "category": "multi",
+      "route": "full",
+      "lighting": "nominal",
+      "enable_static": true,
+      "enable_moving": true,
+      "moving_speed": 0.15,
+      "obstacle_layout": "mixed"
+    }
+  ]
+}

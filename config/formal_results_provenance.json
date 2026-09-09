@@ -1,0 +1,8 @@
+{
+  "formal_results_configuration_id": "82999888659be0c7",
+  "formal_vision_trials": 150,
+  "formal_baseline_trials": 60,
+  "formal_total_trials": 210,
+  "status": "completed",
+  "note": "The supplied formal results were generated before the submission copy received professional filenames and environment-variable names. The navigation algorithms, scenario values and result data were not changed during packaging. The submission manifest records the hashes of the professionally named copy."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Frozen formal vision controller",
+  "created_utc": "2026-08-04T14:06:45.387479+00:00",
+  "configuration_id": "be171c2471ea6980",
+  "sha256": "be171c2471ea6980247f3e75d9c4004ce06a80d6172dcf885e059d02e0c3091f",
+  "files": {
+    "controllers/baseline_ground/baseline_ground.py": "2d0f0596c081e76f49f94687629a815f655cb5832455a9cc9debd8e0f2fe06c5",
+    "controllers/experiment_supervisor/experiment_supervisor.py": "da67017497da5198cf2dfb1b2de216c5a3f6038f09ae871261f15f81a6019fd2",
+    "controllers/experiment_supervisor/metrics.py": "36757f1b0179c8a9d87c869904ca77bae40ad94853067f0b56cf4cceacbd0f67",
+    "controllers/vision_controller/config.py": "8c2797c8f2b546ee4bcdd14dfe41bf6eb2c71df25cc890d0c41f5a686b4263f6",
+    "controllers/vision_controller/control.py": "eb8bcdde1c6756408ed22b6c3a60f8b45c9a23d387b24499b11b5f87d0463466",
+    "controllers/vision_controller/models.py": "78532246a5ad498b48089779e0da6ef449b8734aab3acba9fe164ed7ce5fb354",
+    "controllers/vision_controller/perception.py": "f580b3a0f9c7002637bf17aa12433cd8896176d526dbdea4ed34fb4a0632c9b8",
+    "controllers/vision_controller/telemetry.py": "48cdd3542b2b118249d9df43418ec30a07ae2fd3badefd0bdabc8d77da12cc21",
+    "controllers/vision_controller/tracking.py": "e6a063cc387b1f9106e33475ddf92968be4f05917b2d22883787c7432c9693e5",
+    "controllers/vision_controller/vision_controller.py": "f5f3c12f6fc00496f987afec9f9ea6aab568bdfc7d29c9ee608053633ee6b883",
+    "requirements.txt": "1e6db13b023349afe512d0751543af6d3dd8b74fe83fc9a8ef86c83d3a5782b1",
+    "scenarios/scenarios.json": "71a3f89e2892e209d589d228f394e168950c524cc90c64cfda0ce1adb0ad42b3",
+    "tools/generate_research_world.py": "625e3e80ca41d906521df74b43f9554dac044ef5d2087834c04890c1e49df62f",
+    "tools/run_scenarios.py": "1203c35d1e31ae2c03306ea9a50464c33a4489446e7ec6161d9c5de17ebf16c1",
+    "tools/summarize_results.py": "97bc9f8b6a30e3c0c79dfb4b7ac71b4e16ebfbce598dc3660b9f7bd19497aa78",
+    "worlds/autonomous_epuck_experiment.wbt": "6231917219672766ab596f6d0b1dfd7870fa20b7a968860f78cb010dc1312b22",
+    "worlds/ground_sensor_baseline.wbt": "8e82b981364421ed8967952476367e24da341dbc71bc1b3d30c2f015b7a2e215"
+  },
+  "note": "Local content manifest; this is not a Git commit or remote version."
+}

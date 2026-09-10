@@ -1,0 +1,12 @@
+run_id,time_s,robot_x,robot_y,lane_error_m,checkpoint_count,static_clearance_m,moving_clearance_m,collision_count,moving_started,moving_cleared,finished,obstacle_layout,static_obstacle_count,moving_obstacle_count
+phase2_nominal_r01_s0001,0.032,-0.460000,-0.450000,0.000000,0,0.580000,1.313202,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.064,-0.457061,-0.449999,0.000001,0,0.577061,1.312175,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.096,-0.454125,-0.449998,0.000002,0,0.574125,1.311154,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.128,-0.451181,-0.450004,0.000004,0,0.571181,1.310143,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.160,-0.448237,-0.450008,0.000008,0,0.568237,1.309135,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.192,-0.445293,-0.450012,0.000012,0,0.565293,1.308134,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.224,-0.442349,-0.450016,0.000016,0,0.562349,1.307139,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.256,-0.439405,-0.450020,0.000020,0,0.559405,1.306149,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.288,-0.436461,-0.450024,0.000024,0,0.556461,1.305165,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.320,-0.433517,-0.450028,0.000028,0,0.553517,1.304188,0,0,0,0,single,1,1
+phase2_nominal_r01_s0001,0.352,-0.430573,-0.450032,0.000032,0,0.550573,1.303216,0,0,0,0,single,1,1

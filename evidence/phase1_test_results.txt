@@ -1,0 +1,47 @@
+VISION-BASED AUTONOMOUS E-PUCK NAVIGATION RESEARCH
+PHASE 1 OFFLINE VALIDATION EVIDENCE
+
+Validation date: 2026-08-04
+Environment:
+- Python 3.12.0
+- OpenCV 4.10.0
+- NumPy 2.4.2
+
+Commands:
+- python tests\fixtures\generate_fixtures.py
+- python -m unittest discover -s tests -v
+- in-memory compile check for controllers/**/*.py and tests/**/*.py
+
+Results:
+- 66 automated tests passed.
+- 0 automated tests failed.
+- 40 Python source files passed the syntax/import audit.
+- Controller package import passed.
+- Default controller state verified as FOLLOW_LANE.
+
+Covered behavior:
+- centered, left-shifted, right-shifted and missing lane fixtures
+- lane center, normalized error and confidence calculation
+- red/blue single- and multi-obstacle contour detection and contour-fragment merging
+- independent multi-object tracks with stable IDs and motion classification
+- threat ranking, blocked-corridor detection and conservative multi-object stopping
+- constant-speed interactive obstacle looping and automatic world reload behavior
+- camera-plus-proximity fusion using ps0-ps7 with hysteresis and emergency avoidance
+- preservation of camera commands when proximity readings are clear
+- readable perception/proximity/decision console formatting and rate limiting
+- preservation of the user-selected interactive-world starting viewpoint
+- front, flank and rear proximity hazard decisions
+- moving-object clear-frame hold and non-opposing continuous crossings
+- visual-only e-puck car shell and 18-tile racing start/finish grid
+- checker-pattern detection without lane-boundary false positives
+- FOLLOW_LANE, STOP_WAIT, AVOID, REJOIN, FINISHED and FAILSAFE
+- state timeouts and new/moving-obstacle interruption during avoidance and rejoin
+- camera-derived motor command generation
+- structured telemetry output
+- evaluator metric calculations
+- camera-only entry point architecture
+- byte-identical preservation of the original ground-sensor baseline
+
+No Supervisor position/distance values and no ground-sensor devices are used by
+either vision entry point. The interactive fused entry point additionally reads
+the e-puck's eight local proximity sensors.

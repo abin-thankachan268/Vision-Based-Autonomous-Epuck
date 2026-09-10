@@ -1,0 +1,75 @@
+VISION-BASED AUTONOMOUS E-PUCK NAVIGATION RESEARCH
+PHASE 2 WEBOTS R2025a INTEGRATION EVIDENCE
+
+Validation date: 2026-08-04
+Environment:
+- Webots R2025a installed locally at F:\Webots-R2025a
+- Python 3.12.0
+- OpenCV 4.10.0
+- NumPy 2.4.2
+- Project retained locally with no Git metadata or remote publication
+
+World:
+- worlds\autonomous_epuck_experiment.wbt
+- 3.0 m x 2.0 m RectangleArena
+- 0.50 m dark-grey road with straight and curved sections
+- two white camera-visible lane boundaries
+- START, CP1, CP2, CP3 and FINISH markers
+- three configurable collidable 0.08 m red stationary obstacles
+- two configurable collidable blue moving objects
+- R2025a EXTERNPROTO URLs pinned to the Cyberbotics R2025a tag
+
+Architecture checks:
+- vision_controller.py reads the camera and wheel motors only.
+- The e-puck has no ground-sensor extension.
+- The evaluation Supervisor has no Emitter or Receiver.
+- Scenario control and ground-truth metrics stay in experiment_supervisor.py.
+
+Headless R2025a validation results:
+
+1. Obstacle-free route
+   Run: phase2_lane_clean_r01_s0011
+   Completed: yes
+   Duration: 54.528 s
+   Checkpoints: 3 of 3
+   Collisions: 0
+
+2. Stationary obstacle
+   Run: phase2_static_clear_r01_s0016
+   Completed: yes
+   Duration: 71.456 s
+   Checkpoints: 3 of 3
+   Collisions: 0
+   Minimum obstacle centre distance: 0.078388 m
+   States observed: STOP_WAIT, AVOID, REJOIN, FOLLOW_LANE
+
+3. Moving object
+   Run: phase2_moving_confirmed_r01_s0023
+   Completed: yes
+   Duration: 55.264 s
+   Checkpoints: 3 of 3
+   Collisions: 0
+   Minimum moving-object centre distance: 0.122825 m
+   Camera behavior: stopped, waited for clearance, rejoined, finished
+
+4. Combined nominal demonstration
+   Run: phase2_nominal_combined_r01_s0024
+   Completed: yes
+   Duration: 70.784 s
+   Checkpoints: 3 of 3
+   Collisions: 0
+   Minimum stationary-object centre distance: 0.081010 m
+   Minimum moving-object centre distance: 0.209959 m
+   States observed: FOLLOW_LANE, STOP_WAIT, AVOID, REJOIN
+
+The saved camera view is evidence\phase2_camera_frame.png. Raw per-step
+ground-truth evaluation files and the aggregate summary are retained under
+results\. These runs are integration/pilot evidence and are not formal Phase 3
+experimental results.
+
+Expanded multi-obstacle validation:
+- `multi_static_sequential`: 10/10 formal completions, 0 collisions.
+- `multi_moving_crossings`: 10/10 formal completions, 0 collisions.
+- `multi_mixed_obstacles`: 10/10 formal completions, 0 collisions.
+- The Supervisor configures the layouts and records evaluation-only ground truth;
+  no navigation values are transmitted to the robot.

@@ -1,0 +1,1 @@
+movie_ready=1 completed=1 completion_time_s=74.688 checkpoints=3 contacts=0 min_static=0.095606 min_moving=0.112544

@@ -1,0 +1,28 @@
+2026-08-20T20:12:20.669865+00:00,controller_started architecture=fixed_hsv+pd+single_target+proximity
+2026-08-20T20:12:21.483973+00:00,state_change time_s=5.312 from=FOLLOW_LANE to=STOP_WAIT reason=moving/unclassified object or proximity danger: stop and wait
+2026-08-20T20:12:21.547884+00:00,state_change time_s=5.856 from=STOP_WAIT to=REJOIN reason=confirming lane
+2026-08-20T20:12:21.555034+00:00,state_change time_s=5.888 from=REJOIN to=STOP_WAIT reason=obstacle encountered while rejoining
+2026-08-20T20:12:21.635636+00:00,state_change time_s=6.592 from=STOP_WAIT to=AVOID reason=simple turn-straight-turn stationary-obstacle avoidance
+2026-08-20T20:12:22.279020+00:00,state_change time_s=12.832 from=AVOID to=REJOIN reason=finite turn-straight-turn lane rejoin
+2026-08-20T20:12:22.722180+00:00,state_change time_s=16.480 from=REJOIN to=FOLLOW_LANE reason=lane reacquired
+2026-08-20T20:12:24.796711+00:00,state_change time_s=33.568 from=FOLLOW_LANE to=REJOIN reason=forward arc toward lane
+2026-08-20T20:12:24.825373+00:00,state_change time_s=33.760 from=REJOIN to=FOLLOW_LANE reason=lane reacquired
+2026-08-20T20:12:24.965223+00:00,state_change time_s=34.816 from=FOLLOW_LANE to=REJOIN reason=forward arc toward lane
+2026-08-20T20:12:51.335731+00:00,controller_started architecture=fixed_hsv+pd+single_target+proximity
+2026-08-20T20:12:51.870108+00:00,state_change time_s=5.312 from=FOLLOW_LANE to=STOP_WAIT reason=moving/unclassified object or proximity danger: stop and wait
+2026-08-20T20:12:51.920268+00:00,state_change time_s=5.856 from=STOP_WAIT to=REJOIN reason=confirming lane
+2026-08-20T20:12:51.924778+00:00,state_change time_s=5.888 from=REJOIN to=STOP_WAIT reason=obstacle encountered while rejoining
+2026-08-20T20:12:51.995084+00:00,state_change time_s=6.592 from=STOP_WAIT to=AVOID reason=simple turn-straight-turn stationary-obstacle avoidance
+2026-08-20T20:12:52.451070+00:00,state_change time_s=12.832 from=AVOID to=REJOIN reason=finite turn-straight-turn lane rejoin
+2026-08-20T20:12:52.763477+00:00,state_change time_s=16.480 from=REJOIN to=FOLLOW_LANE reason=lane reacquired
+2026-08-20T20:12:54.187788+00:00,state_change time_s=33.568 from=FOLLOW_LANE to=REJOIN reason=forward arc toward lane
+2026-08-20T20:12:54.206325+00:00,state_change time_s=33.760 from=REJOIN to=FOLLOW_LANE reason=lane reacquired
+2026-08-20T20:12:54.296665+00:00,state_change time_s=34.816 from=FOLLOW_LANE to=REJOIN reason=forward arc toward lane
+2026-08-20T20:12:54.950962+00:00,state_change time_s=44.032 from=REJOIN to=FOLLOW_LANE reason=lane reacquired
+2026-08-20T20:12:58.760007+00:00,state_change time_s=88.864 from=FOLLOW_LANE to=REJOIN reason=forward arc toward lane
+2026-08-20T20:12:59.398046+00:00,state_change time_s=98.016 from=REJOIN to=FOLLOW_LANE reason=lane reacquired
+2026-08-20T20:13:00.755146+00:00,state_change time_s=113.248 from=FOLLOW_LANE to=REJOIN reason=forward arc toward lane
+2026-08-20T20:13:00.768813+00:00,state_change time_s=113.408 from=REJOIN to=STOP_WAIT reason=proximity danger while rejoining
+2026-08-20T20:13:00.791857+00:00,state_change time_s=113.664 from=STOP_WAIT to=AVOID reason=emergency proximity reverse-turn
+2026-08-20T20:13:00.918099+00:00,state_change time_s=115.424 from=AVOID to=FINISHED reason=finish marker reached
+2026-08-20T20:13:00.918099+00:00,finish_detected time_s=115.424

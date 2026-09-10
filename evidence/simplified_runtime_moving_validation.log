@@ -1,0 +1,8 @@
+2026-08-19T08:42:23.154619+00:00,controller_started architecture=fixed_hsv+pd+single_target+proximity
+2026-08-19T08:42:23.509438+00:00,state_change time_s=2.848 from=FOLLOW_LANE to=STOP_WAIT reason=moving/unclassified object or proximity danger: stop and wait
+2026-08-19T08:42:23.827034+00:00,state_change time_s=5.408 from=STOP_WAIT to=REJOIN reason=confirming lane
+2026-08-19T08:42:23.857126+00:00,state_change time_s=5.632 from=REJOIN to=FOLLOW_LANE reason=lane reacquired
+2026-08-19T08:42:25.939179+00:00,state_change time_s=26.336 from=FOLLOW_LANE to=REJOIN reason=forward arc toward lane
+2026-08-19T08:42:26.871780+00:00,state_change time_s=35.776 from=REJOIN to=FOLLOW_LANE reason=lane reacquired
+2026-08-19T08:42:30.673902+00:00,state_change time_s=71.296 from=FOLLOW_LANE to=REJOIN reason=forward arc toward lane
+2026-08-19T08:42:31.672203+00:00,state_change time_s=81.312 from=REJOIN to=FAILSAFE reason=lane recovery timeout
